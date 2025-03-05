@@ -10,7 +10,6 @@ typedef struct {
     // positions
     float x;
     float y;
-
     // veloctiess
     float vx;
     float vy;
@@ -23,8 +22,9 @@ void create_boids(void);
 
 int main(void)
 {
+    SetTargetFPS(60);
     InitWindow(WIDTH, HEIGHT, "BOIDO");
-    Color bg = { .r =23, .g =23, .b = 23, .a =255 };
+    Color bg = { .r = 23, .g = 23, .b = 23, .a = 255 };
 
     Vector2 pos = {
         .x = GetScreenWidth()/2,
