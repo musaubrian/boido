@@ -12,6 +12,7 @@ int main(void)
     Color bg = { .r =23, .g =23, .b = 23, .a =255 };
     while(!WindowShouldClose())
     {
+        if (IsKeyDown(KEY_LEFT_CONTROL) && IsKeyPressed(KEY_W)) break;
         BeginDrawing();
         ClearBackground(bg);
 
